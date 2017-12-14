@@ -1,0 +1,16 @@
+<div class="auth-form">
+  <form [formGroup]="authForm" novalidate (ngSubmit)="submit()">
+    <div>
+      <label>Email:</label>
+      <input class="form-control" name="email" formControlName="userEmail" />
+      <div class="alert alert-danger" *ngIf="authForm.controls['userEmail'].invalid && authForm.controls['userEmail'].touched">
+        Некорректный Email
+      </div>
+    </div>
+    <div class="form-group__button">
+      <button class="app-button" [disabled]="authForm.invalid || progress">
+          Отправить
+    </button>
+    </div>
+  </form>
+</div>

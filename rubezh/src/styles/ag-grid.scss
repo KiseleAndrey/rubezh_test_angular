@@ -1,0 +1,30 @@
+ag-grid-angular {
+    .ag-group-expanded {
+        .ag-icon-contracted {
+            background:transparent;
+        }
+
+        .ag-icon-contracted:before {
+            content: "\f07c";
+            font-family: FontAwesome;
+            font-size: 1.3em;
+            position: relative;
+            left: 3px;
+        }
+        
+    }
+
+    .ag-group-contracted {
+        .ag-icon-expanded {
+            background:transparent;
+        }
+
+        .ag-icon-expanded:before {
+            content: "\f07b";
+            font-family: FontAwesome;
+            font-size: 1.3em;
+            position: relative;
+            left: 3px;
+         }
+    }
+ }

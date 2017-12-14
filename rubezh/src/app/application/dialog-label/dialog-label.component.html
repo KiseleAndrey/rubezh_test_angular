@@ -1,0 +1,9 @@
+<div class="dialog-labels-content">
+  <div *ngFor="let label of labels" class="dialog-labels">
+    <span>Название ноды первого грида: {{label.firstLabel}}</span>
+    <span>Название ноды второго грида: {{label.secondLabel}}</span>
+  </div>
+</div>
+<div class="dialog-labels-footer">
+  <button class="app-button" (click)="closeDialog()">OK</button>
+</div>

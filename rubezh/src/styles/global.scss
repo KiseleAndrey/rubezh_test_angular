@@ -1,0 +1,46 @@
+@import "../../node_modules/ag-grid/dist/styles/ag-grid.css";
+@import  "../../node_modules/ag-grid/dist/styles/theme-material";
+@import 'ag-grid';
+ 
+ 
+ html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  .app-button {
+    background:#5ca4d4;
+    padding: 10px;
+    border-radius:2px;
+    min-width: 90px;
+    cursor: pointer;
+    font-family:Roboto-Medium;
+    font-size:13px;
+    color:#ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    border:none; 
+    &:hover{
+        background:#229bd2; 
+    }
+}
+
+.app-button:disabled {
+    background:#9B9B9B ;
+    cursor:ne-resize;
+    &:hover{
+        background:#9B9B9B ;
+    }
+
+    &:focus{
+        background:#169ad6; 
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      cursor:default;
+      background: #bfbfbf;
+    }
+}

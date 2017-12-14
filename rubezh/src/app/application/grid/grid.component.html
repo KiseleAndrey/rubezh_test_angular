@@ -1,0 +1,11 @@
+<div class="header">
+    <button  class="app-button" (click)="sentMessege()">Отправить</button>
+</div>    
+<div class="grid-contet">
+  <ag-grid-angular 
+   class="user-event-grid ag-material"
+   [gridOptions]="gridOptions" 
+   rowSelection="single"
+   enableColResize >
+  </ag-grid-angular>
+</div>
